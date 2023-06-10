@@ -2,4 +2,90 @@
 
 \begin{document}
 
+\subsection{Movimiento Periódico}
+
+Un movimiento periódico se repite
+en un ciclo definido; se presenta siempre que un cuerpo
+tiene una posición de equilibrio estable y una fuerza de
+restitución que actúa cuando el cuerpo se desplaza a partir
+del equilibrio.  \parencite{sears}
+
+\subsection{Movimiento Armónico Simple}
+
+Si en el movimiento periódico
+la fuerza de restitución $\vec{F}_x$ es directamente proporcional al
+desplazamiento x, el \textit{movimiento se denomina armónico
+simple (MAS)}. \parencite{sears}
+
+\subsection{Ecuación del Movimiento Armónico Simple}
+
+Según la condición del movimiento armónico simple:
+\begin{equation} \label{force_res}
+    \vec{F}_x = - k\cdot \vec{x}
+\end{equation}
+
+y usando la Segunda Ley de Newton:
+\begin{equation} \label{second_newton_law}
+    \vec{F}_r = m\cdot\vec{a}_r
+\end{equation} 
+
+Sabiendo que la fuerza restauradora $\vec{F}_x$ es la única fuerza que actua en el cuerpo,
+procedemos a reemplazar \ref{force_res} en \ref{second_newton_law}:
+
+\begin{equation} \nonumber
+    \vec{F}_x = m\cdot\vec{a}
+\end{equation}
+\begin{equation} \nonumber
+    - k\cdot \vec{x} = m\cdot\vec{a}
+\end{equation}
+Ordenando:
+\begin{equation} \label{mas_eq}
+    m\cdot\frac{d^2\vec{x}}{dt^2} + k\cdot \vec{x} = 0
+\end{equation}
+La ecuación \ref{mas_eq}, debido a que posee una función con sus derivadas, es una \textit{ecuación
+diferencial}; esta ecuación describe la posición de una partícula que desarrolla un MAS.\\ \\
+La solución de la ecuación \ref{mas_eq} es la siguiente: 
+\begin{equation} \label{mas_general_sol}
+    x = Acos(\omega t + \phi_0)
+\end{equation}
+
+Donde:
+
+\begin{itemize}
+    \item $\omega$: frecuencia angular
+    \item $\phi_0$: fase inicial
+    \item $A$: amplitud
+    \item $x$: posición de la partícula
+\end{itemize}
+
+\subsection{Frecuencia}
+Es el número de ciclos ejecutados por cada segundo. \cite{sears}
+\begin{equation} \label{freq}
+    f\:=\:\frac{n\acute{u}mero\:de\:ciclos}{\Delta t}
+\end{equation}
+
+\subsection{Frecuencia Angular}
+
+Se define como $2\pi$ veces el número de ciclos ejecutados cada segundo.
+
+\begin{equation} \label{freq_ang_1}
+    \omega\:=\:2\pi \cdot f
+\end{equation}
+
+También es posible relacionar la frecuencia angular con la constante \textit{k} y
+con la masa de la partícula por medio de la siguiente ecuación:
+
+\begin{equation} \label{freq_ang_2}
+    \omega\:=\: \sqrt{\frac{k}{m}}
+\end{equation}
+
+\subsection{Amplitud}
+
+Es la elongación máxima.\cite{web_mas}
+
+\subsection{Fase Inicial}
+
+Se trata del ángulo que representa el estado inicial de vibración, 
+es decir, la elongación x del cuerpo en el instante t = 0. \parencite{web_mas}
+
 \end{document}
