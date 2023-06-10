@@ -1,7 +1,5 @@
 \documentclass[../main.tex]{subfiles}
 
-\usepackage{multirow}
-
 \begin{document}
 \begin{table}[H]
     \centering
@@ -30,49 +28,51 @@
 \end{table}
 \begin{table}[H]
     \centering
-    \begin{table}{c|c|c}
-        Combinación de masa & N° de Masa Total & Masa (kg) \\
-        $m_3$                 & 1 & \\
-        $m_3$ + $m_1$         & 2 & \\
-        $m_3$ + $m_2$         & 3 & \\
-        $m_3$ + $m_4$         & 4 & \\
-        $m_1$ + $m_2$ + $m_3$ & 5 & \\
+    \begin{tabular}{c|c|c}
         \hline
-    \end{table}
+        Combinación de masa & N° de Combinación & Masa (kg) \\
+        \hline
+        $m_3$                 & 1 & 0.5152 \\
+        $m_3$ + $m_1$         & 2 & 0.7174 \\
+        $m_3$ + $m_2$         & 3 & 0.7671\\
+        $m_1$ + $m_2$ + $m_3$ & 4 & 0.9697\\
+        $m_3$ + $m_4$         & 5 & 1.5267\\
+        \hline
+    \end{tabular}
     \caption{Masas Totales}
 \end{table}
 \begin{table}[H]
     \centering
-    \begin{tabular}{c|c|c|c}
+    \begin{tabular}{c|c|c|c|c}
         \hline
-        &&& Periodo (s) \\
+        \multirow{2}{*}{N° Masa} &
+        \multirow{2}{*}{Combinación de Masa} &
+        \multicolumn{3}{c}{Periodo (s)}\\
+        \cline{3-5}
+         &  & $T_1$ & $T_2$ & $T_3$\\
         \hline
-        N° Masa & $T_1$ & $T_2$ & $T_3$\\
-        \hline
-        $m_3$                 & 7.92  & 7.94  & 7.93\\
-        $m_3$ + $m_1$         & 9.37  & 9.37  & 9.36\\
-        $m_3$ + $m_2$         & 9.62  & 9.57  & 9.53\\
-        $m_3$ + $m_4$         & 13.55 & 13.60 & 13.54\\
-        $m_1$ + $m_2$ + $m_3$ & 10.88 & 10.86 & 10.85\\
+        $m_3$                 & 1 & 7.92  & 7.94  & 7.93\\
+        $m_3$ + $m_1$         & 2 & 9.37  & 9.37  & 9.36\\
+        $m_3$ + $m_2$         & 3 & 9.62  & 9.57  & 9.53\\
+        $m_1$ + $m_2$ + $m_3$ & 4 & 10.88 & 10.86 & 10.85\\
+        $m_3$ + $m_4$         & 5 & 13.55 & 13.60 & 13.54\\
         \hline
     \end{tabular}
     \caption{Periodos de las masas.}
 \end{table}
 \begin{table}[H]
     \centering
-    \begin{tabular}{c|c}
+    \begin{tabular}{c|c|c}
         \hline
-        &&& Periodo (s) \\
+        N° Masa & Combinación de Masa & $L_0$ + $\Delta L$ (cm) $\pm 0.05$\\
         \hline
-        N° Masa & $L_0$ + $\Delta L$ (cm) $\pm 0.05$\\
-        \hline
-        $m_3$                 & 29\\
-        $m_3$ + $m_1$         & 34.9\\
-        $m_3$ + $m_2$         & 36.4\\
-        $m_3$ + $m_4$         & 58.5\\
-        $m_1$ + $m_2$ + $m_3$ & 42.4\\
+        $m_3$                 & 1 & 29\\
+        $m_3$ + $m_1$         & 2 & 34.9\\
+        $m_3$ + $m_2$         & 3 & 36.4\\
+        $m_1$ + $m_2$ + $m_3$ & 4 & 42.4\\
+        $m_3$ + $m_4$         & 5 & 58.5\\
         \hline
     \end{tabular}
-    \caption{Periodos de las masas.}
+    \caption{Longitud + Variación con respecto a cada masa.}
 \end{table}
 \end{document}
