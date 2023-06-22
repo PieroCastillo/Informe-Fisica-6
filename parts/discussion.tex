@@ -1,6 +1,17 @@
 \documentclass[../main.tex]{subfiles}
 
-\usepackage{float}
-
 \begin{document}
+Como se observa, los errores relativos son muy similares entre sí en todos los casos, siendo su valor promedio de \qty{56.3}{\percent}.
+Un error bastante significativo y mayor al valor estándar permitido (\qty{10}{\percent}) para determinar si una medida es precisa o no.
+
+Por otro lado, al comparar los resultados de la tabla \ref{tab:massAndFreq} y \ref{tab:theoreticalMeasurements}, se verifica que, en todos los casos, el valor de la frecuencia $\mathit{v^\prime} \pm \Delta \mathit{v^\prime}$ contiene al valor de $\mathit{v} \pm \mathit{v}$.
+Sin embargo, la diferencia entre valores de $\mathit{v^\prime}$ y $\mathit{v}$ no rebasan la cantidad de \qty{0.021}{osc\per\second}.
+Estos hallazgos apuntan hacia una baja precisión en los resultados presentados en la tabla \ref{tab:theoreticalMeasurements}, sin embargo, resalta notablemente la similitud entre los valores absolutos de la frecuencia en comparación con los resultados de la tabla \ref{tab:massAndFreq}.
+
+La discrepancia identificada en las frecuencias $\mathit{v^\prime} \pm \Delta \mathit{v^\prime}$ de la tabla 6 puede atribuirse principalmente a la propagación de errores en la ecuación (num4), particularmente en relación al valor de la constante del resorte $k$.
+Aunque la incertidumbre relativa asociada a esta constante es bastante reducida, no es inferior a la incertidumbre relativa asociada a la masa en cuestión.
+
+Adicionalmente, cabe resaltar la notable precisión observada en los resultados de la frecuencia presentados en la tabla \ref{tab:massAndFreq}.
+Esta precisión se atribuye al método empleado para la medición del tiempo, donde la realización de 10 oscilaciones contribuye a reducir el error aleatorio inherente al proceso.
+De esta forma, el tiempo de reacción del usuario adquiere una menor relevancia en el error absoluto de la medida.
 \end{document}

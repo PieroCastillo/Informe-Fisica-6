@@ -13,7 +13,10 @@
 \usepackage{amsmath}
 \usepackage{siunitx}
 \usepackage{physics}
-\sisetup{per-mode=fraction}
+\sisetup{
+  per-mode=fraction,
+  uncertainty-mode=separate,
+}
 \AtBeginDocument{\RenewCommandCopy\qty\SI}
 
 % content layout
@@ -66,6 +69,9 @@
 
 \section{Discusiones}
 \subfile{parts/discussion}
+
+\section{Cuestionario}
+\subfile{parts/questionnaire}
 
 \section{Conclusiones}
 \subfile{parts/conclusion}
