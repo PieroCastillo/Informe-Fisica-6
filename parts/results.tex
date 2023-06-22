@@ -1,11 +1,70 @@
 \documentclass[../main.tex]{subfiles}
 
-\usepackage{amsmath}
-\usepackage{array}
-\usepackage{float}
-
 \begin{document}
+Sabiendo que:
+\begin{align*}
+  F &= -kx \\
+  mg &= -kx \\
+  \abs{mg} &= \abs{-kx} \\
+  k &= \frac{\abs{mg}}{\abs{x}} = \frac{\abs{F}}{\abs{x}}
+\end{align*}
+Donde $m$ es la masa del objeto, $g$, el módulo de la gravedad, y $x$ el desplazamiento del resorte respecto de su longitud natural.
+Para determinar el peso del objeto $mg$, es preciso realizar la conversión de unidades de gramos y centímetros, a kilogramos y metros respectivamente.
+Cabe resaltar la consideración de 4 cifras significativas en el valor de la aceleración de la gravedad, siendo esta de \qty{9,807}{\metre\per\second\squared}.
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=0.95\textwidth]{resources/resl1.png}
+  \end{center}
+  \caption{Relación entre el peso de los cuerpos y el desplazamiento del resorte}
+  \label{fig:weightdisplacement}
+\end{figure}
+De la gráfica, se puede observar en primer lugar, que el ajuste de la recta es bastante preciso, esto se puede comprobar verificando que el coeficiente determinación (R2), es aproximadamente la unidad, evaluado en el orden de las diezmilésimas.
+Además, las barras de error en ambas dimensiones son prácticamente despreciables en relación a la escala representada en la gráfica 1.
+Luego, de la ecuación señalada, es posible extraer su pendiente, la cual representa la constante K del resorte de acuerdo al ajuste por mínimos cuadrados realizado.
+\begin{equation}
+  \label{eq:forceFromSlope}
+  F = \num{33.402} (\Delta L) + \num{2.4478}
+\end{equation}
+En primera instancia, se observa en la ecuación \ref{eq:forceFromSlope}, un término independiente que es igual al peso cuando el desplazamiento del resorte respecto a la longitud natural es igual a cero.
+Visto desde un punto de vista físico, la existencia de este término puede deberse a errores experimentales como la medición de los datos, la fricción y la resistencia del aire, que reducen la energía del sistema, afectando la relación entre los parámetros estudiados e introduciendo un término independiente en la ecuación.
+Otra razón es que los resortes reales, no son perfectamente lineales, y pueden tener algunas irregularidades en su comportamiento, que se manifiestan en mayor medida, cuando el desplazamiento es muy grande, puesto que el material del resorte no es el más idóneo y su geometría no es perfectamente lineal.
+Por otro lado, al evaluar $F = 0$, el desplazamiento toma un valor negativo, que representa una compresión del resorte en dirección opuesta a la atracción gravitatoria.
 
+De la ecuación \ref{eq:forceFromSlope}, el valor de la constante K del resorte es \qty{33.40}{\newton\per\metre}, redondeado a 4 cifras significativas de acuerdo a las cifras significativas de los datos tomados experimentalmente.
 
-
+Posteriormente, con el objetivo de determinar la incertidumbre asociada, se utilizó el software Excel, reconocido por su capacidad en el análisis de datos y cálculos precisos.
+Como resultado de dicho análisis, se obtuvo un valor de \qty{0.26}{\newton\per\metre} para la magnitud en cuestión.
+Entonces:
+\begin{equation}
+  K \pm \Delta K = (\num{33.40} + \num{0.26}) \unit{\newton\metre}
+\end{equation}
+Evaluando la incertidumbre relativa de K:
+\begin{equation}
+  \varepsilon_R = \frac{\Delta K}{K} = \frac{\num{0.26}}{\num{33.40}} \approx \qty{0.78}{\percent}
+\end{equation}
+El error relativo es incluso menor a \qty{1}{\percent}, lo cual indica una alta precisión de la medida, atribuyéndole una mayor confiabilidad al realizar cálculos futuros con la misma.
+\begin{table}[H]
+  \caption{Relación entre la frecuencia y el tiempo requerido para completar 10 oscilaciones en función de diferentes masas y amplitudes}
+  \label{tab:frequence}
+  \begin{center}
+    \begin{tabular}[c]{lrrrrr}
+      \toprule
+      \multirow{2}{*}{Número de combinación} &
+      \multicolumn{4}{c}{$\Delta t \pm \qty{0.01}{\second}$} &
+      \multirow{2}{*}{$v$} \\
+      \cmidrule{2-5}
+      & $\Delta t_1$
+      & $\Delta t_2$
+      & $\Delta t_3$
+      & $\Delta t_4$ \\
+      \midrule
+      1 & \num{7.92} & \num{7.94} & \num{7.93} & \num{7.93} & \num{1.26} \\
+      2 & \num{9.37} & \num{9.37} & \num{9.36} & \num{9.37} & \num{1.07} \\
+      3 & \num{9.62} & \num{9.57} & \num{9.53} & \num{9.57} & \num{1.04} \\
+      4 & \num{10.88} & \num{10.86} & \num{10.85} & \num{10.86} & \num{0.9208} $\pm$ \num{0.0008} \\
+      5 & \num{13.55} & \num{13.60} & \num{13.54} & \num{13.56} & \num{0.7375} $\pm$ \num{0.0005} \\
+      \bottomrule
+    \end{tabular}
+  \end{center}
+\end{table}
 \end{document}
