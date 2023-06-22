@@ -12,7 +12,9 @@
 % math extensions
 \usepackage{amsmath}
 \usepackage{siunitx}
+\usepackage{physics}
 \sisetup{per-mode=fraction}
+\AtBeginDocument{\RenewCommandCopy\qty\SI}
 
 % content layout
 \usepackage{float}
